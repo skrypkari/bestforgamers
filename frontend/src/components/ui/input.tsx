@@ -1,7 +1,6 @@
 'use client'
 import React, { useRef } from 'react';
 import { IoIosInformationCircle } from "react-icons/io";
-import {className} from "postcss-selector-parser";
 
 type InputType = {
     placeholder?: string;

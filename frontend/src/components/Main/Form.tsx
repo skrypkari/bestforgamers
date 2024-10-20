@@ -87,9 +87,9 @@ const Form = () => {
                 <span className='text-white font-bold text-2xl'>Способ оплаты</span>
                 <div className='flex gap-1.5 items-center'>
                     <span
-                        className='text-[10px] font-bold cursor-pointer text-white/80 hover:text-white transition-all'>Как это работает?</span>
+                        className='text-[12px] font-bold cursor-pointer text-white/80 hover:text-white transition-all'>Как это работает?</span>
                     <span
-                        className='text-[10px] font-bold cursor-pointer text-emerald-500 hover:text-emerald-400 transition-all'>Пополняю впервые</span>
+                        className='text-[12px] font-bold cursor-pointer text-emerald-500 hover:text-emerald-400 transition-all'>Пополняю впервые</span>
                 </div>
             </div>
             <div className={'w-full h-[40px] flex mt-5'}>

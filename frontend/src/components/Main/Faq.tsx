@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Faq = () => {
     return (
-        <footer className='pt-32 bg-gradient-to-b from-zinc-950 to-zinc-900 w-full'>
+        <footer className='pt-64 bg-gradient-to-b from-zinc-950 to-zinc-900 w-full'>
             <div className={'max-w-[1380px] w-full flex justify-between mx-auto'}>
                 <div className='flex-grow'>
                     <h4 className='text-white font-bold text-[48px]'>FAQ</h4>

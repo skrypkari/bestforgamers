@@ -5,13 +5,14 @@ import { IoIosInformationCircle } from "react-icons/io";
 type InputType = {
     placeholder?: string;
     info?: boolean;
+    onInfoClick?:  React.MouseEventHandler<SVGElement>;
     type?: 'text' | 'amount';
     value?: string; // Добавлено
     onChange?: (value: string) => void; // Добавлено
     className?: string;
 }
 
-const Input = ({ placeholder, info, type, value = '', onChange, className= ''}: InputType) => {
+const Input = ({ placeholder, info, type, value = '', onChange, className= '', onInfoClick}: InputType) => {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -53,7 +54,7 @@ const Input = ({ placeholder, info, type, value = '', onChange, className= ''}: 
                 onChange={handleChange}
                 className='w-full h-[60px] rounded-xl bg-white/10 border border-white/15 pl-2 placeholder:font-bold placeholder:text-white/80 outline-0 text-white font-bold focus:bg-white/20 transition-all'
             />
-            {info && <IoIosInformationCircle className='absolute right-5 top-1/2 -translate-y-1/2 text-xl cursor-pointer text-white hover:text-white/80 transition-all' />}
+            {info && <IoIosInformationCircle onClick={onInfoClick} className='absolute right-5 top-1/2 -translate-y-1/2 text-xl cursor-pointer text-white hover:text-white/80 transition-all' />}
         </div>
     );
 };

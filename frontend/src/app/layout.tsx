@@ -12,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru" style={{scrollBehavior:'smooth'}}>
       <body
         className={`antialiased bg-zinc-950`}
       >

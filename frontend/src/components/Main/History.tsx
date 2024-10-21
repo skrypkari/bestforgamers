@@ -45,7 +45,7 @@ const History = () => {
     }, []);
 
     return (
-        <div className={'h-8 w-full overflow-hidden flex absolute bottom-0'}>
+        <div className={'h-8 w-full overflow-hidden flex lg:absolute py-10 bottom-0 '}>
             <AnimatePresence>
                 {clients.map((client, i) => {
                     return (

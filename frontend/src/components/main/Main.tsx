@@ -1,7 +1,7 @@
 import React from 'react';
 import franklin from '../../assets/franklin.png'
 import Image from "next/image";
-import Form from "@/components/Main/Form";
+import Form from "@/components/main/Form";
 const Main = () => {
     return (
         <main className={'max-w-[1380px] w-full mx-auto mt-10 lg:mt-20 px-5 xl:px-0'}>

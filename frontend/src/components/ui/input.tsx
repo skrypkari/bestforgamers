@@ -7,12 +7,14 @@ type InputType = {
     info?: boolean;
     onInfoClick?:  React.MouseEventHandler<SVGElement>;
     type?: 'text' | 'amount';
+    inputType?: 'text' | 'email' | 'password';
     value?: string; // Добавлено
     onChange?: (value: string) => void; // Добавлено
     className?: string;
+    name?: string;
 }
 
-const Input = ({ placeholder, info, type, value = '', onChange, className= '', onInfoClick}: InputType) => {
+const Input = ({ placeholder, info, type, value = '', onChange, className= '', onInfoClick, inputType, name}: InputType) => {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -50,7 +52,9 @@ const Input = ({ placeholder, info, type, value = '', onChange, className= '', o
             <input
                 ref={inputRef}
                 placeholder={placeholder}
+                name={name}
                 value={value}
+                type={inputType}
                 onChange={handleChange}
                 className='w-full h-[60px] rounded-xl bg-white/10 border border-white/15 pl-2 placeholder:font-bold placeholder:text-white/80 outline-0 text-white font-bold focus:bg-white/20 transition-all'
             />

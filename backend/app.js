@@ -19,6 +19,10 @@ app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req,res) => {
+    return res.send('hello from server');
+})
+
 app.use('/api/auth', authRoutes);
 
 const PORT = process.env.PORT || 5000;

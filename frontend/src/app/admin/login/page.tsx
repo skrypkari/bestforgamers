@@ -44,6 +44,7 @@ const Page = () => {
                     }, 5000)
                 }
             }catch (e){
+                console.log(e);
                 setTimeout(() => {
                     setLoading(false)
                     setError('Server error !')

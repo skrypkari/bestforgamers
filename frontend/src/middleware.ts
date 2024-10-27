@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { decrypt } from '@/app/lib/sessions'
 import { cookies } from 'next/headers'
 
-const protectedRoutes = ['/admin']
-const publicRoutes = ['/admin/login', '/']
+const protectedRoutes = ['']
+const publicRoutes = ['/admin/login', '/admin', '/']
 
 export default async function middleware(req: NextRequest) {
     const path = req.nextUrl.pathname

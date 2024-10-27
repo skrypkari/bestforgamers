@@ -26,7 +26,7 @@ const items = [
 
 const Page = () => {
 
-    const [selectedItem, setSelectedItem] = useState(1);
+    const [selectedItem, setSelectedItem] = useState(0);
 
 
 
